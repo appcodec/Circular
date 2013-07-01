@@ -53,6 +53,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB74BD541781562B003AF5D4 /* Koi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Koi;
+			sourceTree = "<group>";
+		};
 		EDC32BD5178154AE00A2E1D4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +90,7 @@
 		EDC32BE7178154AE00A2E1D4 /* Circular */ = {
 			isa = PBXGroup;
 			children = (
+				EB74BD541781562B003AF5D4 /* Koi */,
 				EDC32BF0178154AE00A2E1D4 /* AppDelegate.h */,
 				EDC32BF1178154AE00A2E1D4 /* AppDelegate.m */,
 				EDC32BF9178154AE00A2E1D4 /* MainStoryboard.storyboard */,
@@ -298,6 +306,7 @@
 				EDC32C03178154AE00A2E1D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
