@@ -150,7 +150,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Username" id="xbc-QR-hWZ">
+                                    <navigationItem title=" " id="xbc-QR-hWZ">
                                         <barButtonItem key="leftBarButtonItem" title=" " id="7sY-YF-sqb">
                                             <connections>
                                                 <action selector="revealMenu:" destination="sBk-A0-jqu" id="eX6-xs-JKX"/>
@@ -163,6 +163,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="barItem" destination="7sY-YF-sqb" id="UVr-mS-tFb"/>
+                        <outlet property="topBar" destination="BNE-Vj-LEn" id="h0S-eX-zCH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4z-t3-uXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,6 +233,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
             <relationships>
                 <relationship kind="action" name="revealMenu:"/>
+                <relationship kind="outlet" name="barItem" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="topBar" candidateClass="UINavigationBar"/>
             </relationships>
         </class>
     </classes>

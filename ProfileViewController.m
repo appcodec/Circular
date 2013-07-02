@@ -8,7 +8,10 @@
 
 #import "ProfileViewController.h"
 
-@interface ProfileViewController ()
+@interface ProfileViewController (){
+    IBOutlet UINavigationBar * topBar;
+    IBOutlet UIBarButtonItem * barItem;
+}
 
 @end
 
@@ -17,6 +20,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    UIImage *backgroundImage = [UIImage imageNamed:@"nav_bar_white_background"];
+    [topBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+    
+    backgroundImage = [UIImage imageNamed:@"nav_btn_sidebar"];
+    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
+    [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     // shadowPath, shadowOffset, and rotation is handled by ECSlidingViewController.
     // You just need to set the opacity, radius, and color.

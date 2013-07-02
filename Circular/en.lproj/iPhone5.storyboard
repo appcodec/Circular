@@ -159,8 +159,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Username" id="Cvu-zw-p5q">
-                                        <barButtonItem key="leftBarButtonItem" title="( )" id="yBz-MI-Ir2">
+                                    <navigationItem title=" " id="Cvu-zw-p5q">
+                                        <barButtonItem key="leftBarButtonItem" title=" " id="yBz-MI-Ir2">
                                             <connections>
                                                 <action selector="revealMenu:" destination="dmU-g5-0gx" id="lsY-Mw-VIc"/>
                                             </connections>
@@ -171,6 +171,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="barItem" destination="yBz-MI-Ir2" id="N1E-P1-2gT"/>
+                        <outlet property="topBar" destination="3Rt-Mh-NhF" id="N84-8d-sha"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiO-IP-Y8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,6 +240,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
             <relationships>
                 <relationship kind="action" name="revealMenu:"/>
+                <relationship kind="outlet" name="barItem" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="topBar" candidateClass="UINavigationBar"/>
             </relationships>
         </class>
     </classes>

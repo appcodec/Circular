@@ -21,9 +21,9 @@
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         // iPhone 5
         if(result.height == 1136){
-            storyboard = [UIStoryboard storyboardWithName:@"iPhone_i5" bundle:nil];
+            storyboard = [UIStoryboard storyboardWithName:@"iPhone5" bundle:nil];
         } else {
-            storyboard = [UIStoryboard storyboardWithName:@"iPhone_i4" bundle:nil];
+            storyboard = [UIStoryboard storyboardWithName:@"iPhone4" bundle:nil];
         }
     }
     

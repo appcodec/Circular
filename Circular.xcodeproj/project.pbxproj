@@ -10,7 +10,7 @@
 		ED23676F17832766000A0830 /* textured_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676C17832766000A0830 /* textured_background@2x.png */; };
 		ED23677017832766000A0830 /* nav_btn_sidebar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */; };
 		ED23677117832766000A0830 /* nav_bar_white_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676E17832766000A0830 /* nav_bar_white_background@2x.png */; };
-		ED8CC95517832111004B21E6 /* iPhone_i4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8CC95317832111004B21E6 /* iPhone_i4.storyboard */; };
+		ED8CC95517832111004B21E6 /* iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8CC95317832111004B21E6 /* iPhone4.storyboard */; };
 		EDC32BE2178154AE00A2E1D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE1178154AE00A2E1D4 /* UIKit.framework */; };
 		EDC32BE4178154AE00A2E1D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE3178154AE00A2E1D4 /* Foundation.framework */; };
 		EDC32BE6178154AE00A2E1D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE5178154AE00A2E1D4 /* CoreGraphics.framework */; };
@@ -20,7 +20,7 @@
 		EDC32BF4178154AE00A2E1D4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF3178154AE00A2E1D4 /* Default.png */; };
 		EDC32BF6178154AE00A2E1D4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF5178154AE00A2E1D4 /* Default@2x.png */; };
 		EDC32BF8178154AE00A2E1D4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF7178154AE00A2E1D4 /* Default-568h@2x.png */; };
-		EDC32BFB178154AE00A2E1D4 /* iPhone_i5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF9178154AE00A2E1D4 /* iPhone_i5.storyboard */; };
+		EDC32BFB178154AE00A2E1D4 /* iPhone5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF9178154AE00A2E1D4 /* iPhone5.storyboard */; };
 		EDE651141782A50D000D3C02 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE651111782A50D000D3C02 /* ECSlidingViewController.m */; };
 		EDE651151782A50D000D3C02 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE651131782A50D000D3C02 /* UIImage+ImageWithUIView.m */; };
 		EDE651191782A54F000D3C02 /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE651181782A54F000D3C02 /* InitialSlidingViewController.m */; };
@@ -36,7 +36,7 @@
 		ED23676C17832766000A0830 /* textured_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textured_background@2x.png"; sourceTree = "<group>"; };
 		ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_btn_sidebar@2x.png"; sourceTree = "<group>"; };
 		ED23676E17832766000A0830 /* nav_bar_white_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bar_white_background@2x.png"; sourceTree = "<group>"; };
-		ED8CC95417832111004B21E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone_i4.storyboard; sourceTree = "<group>"; };
+		ED8CC95417832111004B21E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone4.storyboard; sourceTree = "<group>"; };
 		EDC32BDE178154AE00A2E1D4 /* Circular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Circular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC32BE1178154AE00A2E1D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EDC32BE3178154AE00A2E1D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,7 +50,7 @@
 		EDC32BF3178154AE00A2E1D4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EDC32BF5178154AE00A2E1D4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EDC32BF7178154AE00A2E1D4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		EDC32BFA178154AE00A2E1D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone_i5.storyboard; sourceTree = "<group>"; };
+		EDC32BFA178154AE00A2E1D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone5.storyboard; sourceTree = "<group>"; };
 		EDE651101782A50D000D3C02 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
 		EDE651111782A50D000D3C02 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
 		EDE651121782A50D000D3C02 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
@@ -130,8 +130,8 @@
 				EDC32BF1178154AE00A2E1D4 /* AppDelegate.m */,
 				EDE651171782A54F000D3C02 /* InitialSlidingViewController.h */,
 				EDE651181782A54F000D3C02 /* InitialSlidingViewController.m */,
-				ED8CC95317832111004B21E6 /* iPhone_i4.storyboard */,
-				EDC32BF9178154AE00A2E1D4 /* iPhone_i5.storyboard */,
+				ED8CC95317832111004B21E6 /* iPhone4.storyboard */,
+				EDC32BF9178154AE00A2E1D4 /* iPhone5.storyboard */,
 				EDE651161782A511000D3C02 /* SlideMenu */,
 				EDE6512B1782DEB8000D3C02 /* MainScreen(FeedNews + Detail) */,
 				EDE6512F1782E40D000D3C02 /* ProfileScreen */,
@@ -254,8 +254,8 @@
 				EDC32BF4178154AE00A2E1D4 /* Default.png in Resources */,
 				EDC32BF6178154AE00A2E1D4 /* Default@2x.png in Resources */,
 				EDC32BF8178154AE00A2E1D4 /* Default-568h@2x.png in Resources */,
-				EDC32BFB178154AE00A2E1D4 /* iPhone_i5.storyboard in Resources */,
-				ED8CC95517832111004B21E6 /* iPhone_i4.storyboard in Resources */,
+				EDC32BFB178154AE00A2E1D4 /* iPhone5.storyboard in Resources */,
+				ED8CC95517832111004B21E6 /* iPhone4.storyboard in Resources */,
 				ED23676F17832766000A0830 /* textured_background@2x.png in Resources */,
 				ED23677017832766000A0830 /* nav_btn_sidebar@2x.png in Resources */,
 				ED23677117832766000A0830 /* nav_bar_white_background@2x.png in Resources */,
@@ -285,12 +285,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ED8CC95317832111004B21E6 /* iPhone_i4.storyboard */ = {
+		ED8CC95317832111004B21E6 /* iPhone4.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ED8CC95417832111004B21E6 /* en */,
 			);
-			name = iPhone_i4.storyboard;
+			name = iPhone4.storyboard;
 			sourceTree = "<group>";
 		};
 		EDC32BEA178154AE00A2E1D4 /* InfoPlist.strings */ = {
@@ -301,12 +301,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		EDC32BF9178154AE00A2E1D4 /* iPhone_i5.storyboard */ = {
+		EDC32BF9178154AE00A2E1D4 /* iPhone5.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EDC32BFA178154AE00A2E1D4 /* en */,
 			);
-			name = iPhone_i5.storyboard;
+			name = iPhone5.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

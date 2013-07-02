@@ -30,9 +30,12 @@
 
 - (void)awakeFromNib
 {
+    
     UIImage * backgroundImage = [UIImage imageNamed:@"nav_btn_sidebar"];
-    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:0.2 topCapHeight:-5];
+    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
     [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    
     
     self.sampleItems = [NSArray arrayWithObjects:@"One", @"Two", @"Three", nil];
 }
