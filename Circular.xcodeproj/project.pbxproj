@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED8CC95517832111004B21E6 /* iPhone_i4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8CC95317832111004B21E6 /* iPhone_i4.storyboard */; };
 		EDC32BE2178154AE00A2E1D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE1178154AE00A2E1D4 /* UIKit.framework */; };
 		EDC32BE4178154AE00A2E1D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE3178154AE00A2E1D4 /* Foundation.framework */; };
 		EDC32BE6178154AE00A2E1D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE5178154AE00A2E1D4 /* CoreGraphics.framework */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED8CC95417832111004B21E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone_i4.storyboard; sourceTree = "<group>"; };
 		EDC32BDE178154AE00A2E1D4 /* Circular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Circular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC32BE1178154AE00A2E1D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EDC32BE3178154AE00A2E1D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,8 +114,8 @@
 				EDC32BF1178154AE00A2E1D4 /* AppDelegate.m */,
 				EDE651171782A54F000D3C02 /* InitialSlidingViewController.h */,
 				EDE651181782A54F000D3C02 /* InitialSlidingViewController.m */,
+				ED8CC95317832111004B21E6 /* iPhone_i4.storyboard */,
 				EDC32BF9178154AE00A2E1D4 /* iPhone_i5.storyboard */,
-				EBC3F9981782F13F00B59FA3 /* iPhone_i4.storyboard */,
 				EDE651161782A511000D3C02 /* SlideMenu */,
 				EDE6512B1782DEB8000D3C02 /* MainScreen(FeedNews + Detail) */,
 				EDE6512F1782E40D000D3C02 /* ProfileScreen */,
@@ -235,7 +237,8 @@
 				EDC32BF4178154AE00A2E1D4 /* Default.png in Resources */,
 				EDC32BF6178154AE00A2E1D4 /* Default@2x.png in Resources */,
 				EDC32BF8178154AE00A2E1D4 /* Default-568h@2x.png in Resources */,
-				EDC32BFB178154AE00A2E1D4 /* iPhone.storyboard in Resources */,
+				EDC32BFB178154AE00A2E1D4 /* iPhone_i5.storyboard in Resources */,
+				ED8CC95517832111004B21E6 /* iPhone_i4.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +265,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		ED8CC95317832111004B21E6 /* iPhone_i4.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED8CC95417832111004B21E6 /* en */,
+			);
+			name = iPhone_i4.storyboard;
+			sourceTree = "<group>";
+		};
 		EDC32BEA178154AE00A2E1D4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
