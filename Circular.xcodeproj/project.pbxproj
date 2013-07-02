@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED6C032F1782EF1E00805EDE /* nav_bar_white_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6C032C1782EF1E00805EDE /* nav_bar_white_background@2x.png */; };
-		ED6C03301782EF1E00805EDE /* nav_btn_sidebar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6C032D1782EF1E00805EDE /* nav_btn_sidebar@2x.png */; };
-		ED6C03311782EF1E00805EDE /* textured_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6C032E1782EF1E00805EDE /* textured_background@2x.png */; };
+		ED6C03351782FFBF00805EDE /* nav_bar_white_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6C03321782FFBF00805EDE /* nav_bar_white_background@2x.png */; };
+		ED6C03361782FFBF00805EDE /* nav_btn_sidebar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6C03331782FFBF00805EDE /* nav_btn_sidebar@2x.png */; };
+		ED6C03371782FFBF00805EDE /* textured_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6C03341782FFBF00805EDE /* textured_background@2x.png */; };
 		EDC32BE2178154AE00A2E1D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE1178154AE00A2E1D4 /* UIKit.framework */; };
 		EDC32BE4178154AE00A2E1D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE3178154AE00A2E1D4 /* Foundation.framework */; };
 		EDC32BE6178154AE00A2E1D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE5178154AE00A2E1D4 /* CoreGraphics.framework */; };
@@ -32,9 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ED6C032C1782EF1E00805EDE /* nav_bar_white_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bar_white_background@2x.png"; sourceTree = "<group>"; };
-		ED6C032D1782EF1E00805EDE /* nav_btn_sidebar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_btn_sidebar@2x.png"; sourceTree = "<group>"; };
-		ED6C032E1782EF1E00805EDE /* textured_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textured_background@2x.png"; sourceTree = "<group>"; };
+		ED6C03321782FFBF00805EDE /* nav_bar_white_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bar_white_background@2x.png"; sourceTree = "<group>"; };
+		ED6C03331782FFBF00805EDE /* nav_btn_sidebar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_btn_sidebar@2x.png"; sourceTree = "<group>"; };
+		ED6C03341782FFBF00805EDE /* textured_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textured_background@2x.png"; sourceTree = "<group>"; };
 		EDC32BDE178154AE00A2E1D4 /* Circular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Circular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC32BE1178154AE00A2E1D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EDC32BE3178154AE00A2E1D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,9 +86,9 @@
 		ED6C032B1782EEBB00805EDE /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
-				ED6C032C1782EF1E00805EDE /* nav_bar_white_background@2x.png */,
-				ED6C032D1782EF1E00805EDE /* nav_btn_sidebar@2x.png */,
-				ED6C032E1782EF1E00805EDE /* textured_background@2x.png */,
+				ED6C03321782FFBF00805EDE /* nav_bar_white_background@2x.png */,
+				ED6C03331782FFBF00805EDE /* nav_btn_sidebar@2x.png */,
+				ED6C03341782FFBF00805EDE /* textured_background@2x.png */,
 			);
 			name = Pictures;
 			sourceTree = "<group>";
@@ -252,9 +252,9 @@
 				EDC32BF6178154AE00A2E1D4 /* Default@2x.png in Resources */,
 				EDC32BF8178154AE00A2E1D4 /* Default-568h@2x.png in Resources */,
 				EDC32BFB178154AE00A2E1D4 /* iPhone.storyboard in Resources */,
-				ED6C032F1782EF1E00805EDE /* nav_bar_white_background@2x.png in Resources */,
-				ED6C03301782EF1E00805EDE /* nav_btn_sidebar@2x.png in Resources */,
-				ED6C03311782EF1E00805EDE /* textured_background@2x.png in Resources */,
+				ED6C03351782FFBF00805EDE /* nav_bar_white_background@2x.png in Resources */,
+				ED6C03361782FFBF00805EDE /* nav_btn_sidebar@2x.png in Resources */,
+				ED6C03371782FFBF00805EDE /* textured_background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
