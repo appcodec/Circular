@@ -30,12 +30,12 @@
 
 - (void)awakeFromNib
 {
+    NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
+    _myProperty = [NSDictionary dictionaryWithContentsOfFile:plistPath];
     
-    UIImage * backgroundImage = [UIImage imageNamed:@"nav_btn_sidebar"];
+    UIImage * backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"Menubutton"]];
     backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
     [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
-    
     
     self.sampleItems = [NSArray arrayWithObjects:@"One", @"Two", @"Three", nil];
 }

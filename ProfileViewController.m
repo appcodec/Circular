@@ -12,6 +12,7 @@
     IBOutlet UINavigationBar * topBar;
     IBOutlet UIBarButtonItem * barItem;
 }
+@property (nonatomic,retain)NSDictionary * myProperty;
 
 @end
 
@@ -21,10 +22,13 @@
 {
     [super viewWillAppear:animated];
     
-    UIImage *backgroundImage = [UIImage imageNamed:@"nav_bar_white_background"];
+    NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
+    _myProperty = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    
+    UIImage *backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"NavigationBar"]];
     [topBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     
-    backgroundImage = [UIImage imageNamed:@"nav_btn_sidebar"];
+    backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"Menubutton"]];
     backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
     [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     

@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED137B99178343E900C5025D /* My Property.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED137B98178343E900C5025D /* My Property.plist */; };
+		ED137B9C178347FF00C5025D /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED137B9B178347FF00C5025D /* SettingController.m */; };
+		ED137B9F1783494C00C5025D /* nav_bar_white_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED137B9E1783494C00C5025D /* nav_bar_white_background@2x.png */; };
+		ED137BA117834CB300C5025D /* sidebarbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED137BA017834CB300C5025D /* sidebarbg@2x.png */; };
+		ED137BA317834D1100C5025D /* sidebarCellLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED137BA217834D1100C5025D /* sidebarCellLine@2x.png */; };
+		ED137BAA17834F9000C5025D /* News Feed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED137BA817834F9000C5025D /* News Feed@2x.png */; };
+		ED137BAB17834F9000C5025D /* Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED137BA917834F9000C5025D /* Profile@2x.png */; };
+		ED137BB01783517100C5025D /* Entertainment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED137BAC1783517100C5025D /* Entertainment@2x.png */; };
+		ED137BB11783517100C5025D /* Food & Drink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED137BAD1783517100C5025D /* Food & Drink@2x.png */; };
+		ED137BB21783517100C5025D /* Music & Arts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED137BAE1783517100C5025D /* Music & Arts@2x.png */; };
+		ED137BB31783517100C5025D /* Shopping@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED137BAF1783517100C5025D /* Shopping@2x.png */; };
 		ED23676F17832766000A0830 /* textured_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676C17832766000A0830 /* textured_background@2x.png */; };
 		ED23677017832766000A0830 /* nav_btn_sidebar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */; };
-		ED23677117832766000A0830 /* nav_bar_white_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676E17832766000A0830 /* nav_bar_white_background@2x.png */; };
 		ED8CC95517832111004B21E6 /* iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8CC95317832111004B21E6 /* iPhone4.storyboard */; };
 		EDC32BE2178154AE00A2E1D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE1178154AE00A2E1D4 /* UIKit.framework */; };
 		EDC32BE4178154AE00A2E1D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC32BE3178154AE00A2E1D4 /* Foundation.framework */; };
@@ -33,9 +43,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED137B98178343E900C5025D /* My Property.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "My Property.plist"; sourceTree = "<group>"; };
+		ED137B9A178347FF00C5025D /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		ED137B9B178347FF00C5025D /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		ED137B9E1783494C00C5025D /* nav_bar_white_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bar_white_background@2x.png"; sourceTree = "<group>"; };
+		ED137BA017834CB300C5025D /* sidebarbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebarbg@2x.png"; sourceTree = "<group>"; };
+		ED137BA217834D1100C5025D /* sidebarCellLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebarCellLine@2x.png"; sourceTree = "<group>"; };
+		ED137BA817834F9000C5025D /* News Feed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News Feed@2x.png"; sourceTree = "<group>"; };
+		ED137BA917834F9000C5025D /* Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile@2x.png"; sourceTree = "<group>"; };
+		ED137BAC1783517100C5025D /* Entertainment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Entertainment@2x.png"; sourceTree = "<group>"; };
+		ED137BAD1783517100C5025D /* Food & Drink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food & Drink@2x.png"; sourceTree = "<group>"; };
+		ED137BAE1783517100C5025D /* Music & Arts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Music & Arts@2x.png"; sourceTree = "<group>"; };
+		ED137BAF1783517100C5025D /* Shopping@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shopping@2x.png"; sourceTree = "<group>"; };
 		ED23676C17832766000A0830 /* textured_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textured_background@2x.png"; sourceTree = "<group>"; };
 		ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_btn_sidebar@2x.png"; sourceTree = "<group>"; };
-		ED23676E17832766000A0830 /* nav_bar_white_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bar_white_background@2x.png"; sourceTree = "<group>"; };
 		ED8CC95417832111004B21E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone4.storyboard; sourceTree = "<group>"; };
 		EDC32BDE178154AE00A2E1D4 /* Circular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Circular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC32BE1178154AE00A2E1D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -85,12 +106,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED137B9D1783480300C5025D /* SettingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ED137B9A178347FF00C5025D /* SettingController.h */,
+				ED137B9B178347FF00C5025D /* SettingController.m */,
+			);
+			name = SettingScreen;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		ED23676B17832748000A0830 /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				ED137BA217834D1100C5025D /* sidebarCellLine@2x.png */,
+				ED137BA017834CB300C5025D /* sidebarbg@2x.png */,
 				ED23676C17832766000A0830 /* textured_background@2x.png */,
 				ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */,
-				ED23676E17832766000A0830 /* nav_bar_white_background@2x.png */,
+				ED137B9E1783494C00C5025D /* nav_bar_white_background@2x.png */,
+				ED137BA817834F9000C5025D /* News Feed@2x.png */,
+				ED137BA917834F9000C5025D /* Profile@2x.png */,
+				ED137BAC1783517100C5025D /* Entertainment@2x.png */,
+				ED137BAD1783517100C5025D /* Food & Drink@2x.png */,
+				ED137BAE1783517100C5025D /* Music & Arts@2x.png */,
+				ED137BAF1783517100C5025D /* Shopping@2x.png */,
 			);
 			name = Picture;
 			sourceTree = "<group>";
@@ -135,6 +174,7 @@
 				EDE651161782A511000D3C02 /* SlideMenu */,
 				EDE6512B1782DEB8000D3C02 /* MainScreen(FeedNews + Detail) */,
 				EDE6512F1782E40D000D3C02 /* ProfileScreen */,
+				ED137B9D1783480300C5025D /* SettingScreen */,
 				EDC32BE8178154AE00A2E1D4 /* Supporting Files */,
 			);
 			path = Circular;
@@ -144,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				ED23676B17832748000A0830 /* Picture */,
+				ED137B98178343E900C5025D /* My Property.plist */,
 				EDC32BE9178154AE00A2E1D4 /* Circular-Info.plist */,
 				EDC32BEA178154AE00A2E1D4 /* InfoPlist.strings */,
 				EDC32BED178154AE00A2E1D4 /* main.m */,
@@ -258,7 +299,16 @@
 				ED8CC95517832111004B21E6 /* iPhone4.storyboard in Resources */,
 				ED23676F17832766000A0830 /* textured_background@2x.png in Resources */,
 				ED23677017832766000A0830 /* nav_btn_sidebar@2x.png in Resources */,
-				ED23677117832766000A0830 /* nav_bar_white_background@2x.png in Resources */,
+				ED137B99178343E900C5025D /* My Property.plist in Resources */,
+				ED137B9F1783494C00C5025D /* nav_bar_white_background@2x.png in Resources */,
+				ED137BA117834CB300C5025D /* sidebarbg@2x.png in Resources */,
+				ED137BA317834D1100C5025D /* sidebarCellLine@2x.png in Resources */,
+				ED137BAA17834F9000C5025D /* News Feed@2x.png in Resources */,
+				ED137BAB17834F9000C5025D /* Profile@2x.png in Resources */,
+				ED137BB01783517100C5025D /* Entertainment@2x.png in Resources */,
+				ED137BB11783517100C5025D /* Food & Drink@2x.png in Resources */,
+				ED137BB21783517100C5025D /* Music & Arts@2x.png in Resources */,
+				ED137BB31783517100C5025D /* Shopping@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +329,7 @@
 				EDE6512A1782DA81000D3C02 /* FeedsCellViewController.m in Sources */,
 				EDE6512E1782E2AE000D3C02 /* DetailCellViewController.m in Sources */,
 				EDE651331782E5E8000D3C02 /* MenuViewController.m in Sources */,
+				ED137B9C178347FF00C5025D /* SettingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

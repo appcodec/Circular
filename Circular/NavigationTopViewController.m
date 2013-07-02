@@ -10,10 +10,14 @@
 
 @implementation NavigationTopViewController
 
+
+
 - (void)viewDidLoad;
 {
-    NSLog(@"TEST");
-    UIImage *backgroundImage = [UIImage imageNamed:@"nav_bar_white_background"];
+    NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
+    _myProperty = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+
+    UIImage *backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"NavigationBar"]];
     [topBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     
     [super viewDidLoad];

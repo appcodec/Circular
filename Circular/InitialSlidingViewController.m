@@ -27,7 +27,7 @@
         }
     }
     
-    self.topViewController = [storyboard instantiateViewControllerWithIdentifier:@"FeedNews"];
+    self.topViewController = [storyboard instantiateViewControllerWithIdentifier:@"News Feed"];
 
 }
 
