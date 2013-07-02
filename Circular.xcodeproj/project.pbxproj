@@ -82,9 +82,9 @@
 		ED6C032B1782EEBB00805EDE /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
-				ED6C032C1782EF1E00805EDE /* nav_bar_white_background@2x.png */,
-				ED6C032D1782EF1E00805EDE /* nav_btn_sidebar@2x.png */,
-				ED6C032E1782EF1E00805EDE /* textured_background@2x.png */,
+				ED6C03321782FFBF00805EDE /* nav_bar_white_background@2x.png */,
+				ED6C03331782FFBF00805EDE /* nav_btn_sidebar@2x.png */,
+				ED6C03341782FFBF00805EDE /* textured_background@2x.png */,
 			);
 			name = Pictures;
 			sourceTree = "<group>";
