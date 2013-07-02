@@ -14,13 +14,21 @@
     [super viewDidLoad];
     
     UIStoryboard *storyboard;
+    CGSize result = [[UIScreen mainScreen] bounds].size;
+    CGFloat scale = [UIScreen mainScreen].scale;
+    result = CGSizeMake(result.width * scale, result.height * scale);
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-        storyboard = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
+        // iPhone 5
+        if(result.height == 1136){
+            storyboard = [UIStoryboard storyboardWithName:@"iPhone_i5" bundle:nil];
+        } else {
+            storyboard = [UIStoryboard storyboardWithName:@"iPhone_i4" bundle:nil];
+        }
     }
     
     self.topViewController = [storyboard instantiateViewControllerWithIdentifier:@"FeedNews"];
-    
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation

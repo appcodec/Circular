@@ -16,7 +16,7 @@
 		EDC32BF4178154AE00A2E1D4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF3178154AE00A2E1D4 /* Default.png */; };
 		EDC32BF6178154AE00A2E1D4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF5178154AE00A2E1D4 /* Default@2x.png */; };
 		EDC32BF8178154AE00A2E1D4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF7178154AE00A2E1D4 /* Default-568h@2x.png */; };
-		EDC32BFB178154AE00A2E1D4 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF9178154AE00A2E1D4 /* iPhone.storyboard */; };
+		EDC32BFB178154AE00A2E1D4 /* iPhone_i5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF9178154AE00A2E1D4 /* iPhone_i5.storyboard */; };
 		EDE651141782A50D000D3C02 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE651111782A50D000D3C02 /* ECSlidingViewController.m */; };
 		EDE651151782A50D000D3C02 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE651131782A50D000D3C02 /* UIImage+ImageWithUIView.m */; };
 		EDE651191782A54F000D3C02 /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE651181782A54F000D3C02 /* InitialSlidingViewController.m */; };
@@ -42,7 +42,7 @@
 		EDC32BF3178154AE00A2E1D4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EDC32BF5178154AE00A2E1D4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EDC32BF7178154AE00A2E1D4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		EDC32BFA178154AE00A2E1D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
+		EDC32BFA178154AE00A2E1D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone_i5.storyboard; sourceTree = "<group>"; };
 		EDE651101782A50D000D3C02 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
 		EDE651111782A50D000D3C02 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
 		EDE651121782A50D000D3C02 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
@@ -112,7 +112,8 @@
 				EDC32BF1178154AE00A2E1D4 /* AppDelegate.m */,
 				EDE651171782A54F000D3C02 /* InitialSlidingViewController.h */,
 				EDE651181782A54F000D3C02 /* InitialSlidingViewController.m */,
-				EDC32BF9178154AE00A2E1D4 /* iPhone.storyboard */,
+				EDC32BF9178154AE00A2E1D4 /* iPhone_i5.storyboard */,
+				EBC3F9981782F13F00B59FA3 /* iPhone_i4.storyboard */,
 				EDE651161782A511000D3C02 /* SlideMenu */,
 				EDE6512B1782DEB8000D3C02 /* MainScreen(FeedNews + Detail) */,
 				EDE6512F1782E40D000D3C02 /* ProfileScreen */,
@@ -269,12 +270,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		EDC32BF9178154AE00A2E1D4 /* iPhone.storyboard */ = {
+		EDC32BF9178154AE00A2E1D4 /* iPhone_i5.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EDC32BFA178154AE00A2E1D4 /* en */,
 			);
-			name = iPhone.storyboard;
+			name = iPhone_i5.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
