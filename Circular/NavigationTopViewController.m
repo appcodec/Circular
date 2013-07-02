@@ -10,9 +10,13 @@
 
 @implementation NavigationTopViewController
 
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    UIImage *backgroundImage = [UIImage imageNamed:@"nav_bar_white_background"];
+    [topBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     
     self.view.layer.shadowOpacity = 0.75f;
     self.view.layer.shadowRadius = 10.0f;

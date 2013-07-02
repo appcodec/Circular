@@ -68,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="84" y="-173"/>
         </scene>
-        <!--Feeds Cell View Controller - Feeds-->
+        <!--Feeds Cell View Controller-->
         <scene sceneID="xya-ku-qoO">
             <objects>
                 <tableViewController id="IDU-iN-sRL" customClass="FeedsCellViewController" sceneMemberID="viewController">
@@ -91,13 +91,16 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Feeds" id="VJF-ia-u2L">
-                        <barButtonItem key="leftBarButtonItem" title="( )" id="2xV-7Q-4YW">
+                    <navigationItem key="navigationItem" id="VJF-ia-u2L">
+                        <barButtonItem key="leftBarButtonItem" title=" " id="2xV-7Q-4YW">
                             <connections>
                                 <action selector="revealMenu:" destination="IDU-iN-sRL" id="95l-wc-DH2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="barItem" destination="2xV-7Q-4YW" id="ocu-eg-TWS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="td4-ho-3Bz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,6 +130,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
+                        <outlet property="topBar" destination="kvl-wx-QlG" id="yI0-ey-EFf"/>
                         <segue destination="IDU-iN-sRL" kind="relationship" relationship="rootViewController" id="ty5-nX-kGE"/>
                     </connections>
                 </navigationController>
@@ -147,7 +151,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Username" id="xbc-QR-hWZ">
-                                        <barButtonItem key="leftBarButtonItem" title="( )" id="7sY-YF-sqb">
+                                        <barButtonItem key="leftBarButtonItem" title=" " id="7sY-YF-sqb">
                                             <connections>
                                                 <action selector="revealMenu:" destination="sBk-A0-jqu" id="eX6-xs-JKX"/>
                                             </connections>
@@ -206,6 +210,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FeedsCellViewController.h"/>
             <relationships>
                 <relationship kind="action" name="revealMenu:"/>
+                <relationship kind="outlet" name="barItem" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>
         <class className="InitialSlidingViewController" superclassName="ECSlidingViewController">
@@ -216,6 +221,9 @@
         </class>
         <class className="NavigationTopViewController" superclassName="UINavigationController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NavigationTopViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="topBar" candidateClass="UINavigationBar"/>
+            </relationships>
         </class>
         <class className="ProfileViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>

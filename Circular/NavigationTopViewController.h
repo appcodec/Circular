@@ -10,6 +10,8 @@
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
 
-@interface NavigationTopViewController : UINavigationController
+@interface NavigationTopViewController : UINavigationController{
+    IBOutlet UINavigationBar * topBar;
+}
 
 @end

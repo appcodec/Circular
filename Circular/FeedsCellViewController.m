@@ -8,15 +8,32 @@
 
 #import "FeedsCellViewController.h"
 
-@interface FeedsCellViewController()
+@interface FeedsCellViewController(){
+    IBOutlet UIBarButtonItem * barItem;
+}
+
+
+
 @property (nonatomic, strong) NSArray *sampleItems;
 @end
 
 @implementation FeedsCellViewController
 @synthesize sampleItems;
 
+//-(void)viewDidLoad{
+//    [super viewDidLoad];
+//
+//    UIImage * backgroundImage = [UIImage imageNamed:@"nav_btn_sidebar"];
+//    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:0.2 topCapHeight:-5];
+//    [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//}
+
 - (void)awakeFromNib
 {
+    UIImage * backgroundImage = [UIImage imageNamed:@"nav_btn_sidebar"];
+    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:0.2 topCapHeight:-5];
+    [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
     self.sampleItems = [NSArray arrayWithObjects:@"One", @"Two", @"Three", nil];
 }
 
