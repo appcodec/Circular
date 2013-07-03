@@ -11,7 +11,7 @@
 #import "MenuViewController.h"
 
 @interface NavigationTopViewController : UINavigationController{
-    IBOutlet UINavigationBar * topBar;
+    
 }
 
 @property (nonatomic,retain)NSDictionary * myProperty;

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ECSlidingViewController.h"
+#import "MenuViewController.h"
 
 @interface SettingController : UIViewController
+
+- (IBAction)revealMenu:(id)sender;
 
 @end

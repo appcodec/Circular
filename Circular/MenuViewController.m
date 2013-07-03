@@ -20,12 +20,15 @@
 
 - (void)awakeFromNib
 {
-    self.menuItems = [NSArray arrayWithObjects:@"Profile", @"News Feed", @" ", @"Category",@"Food & Drink", @"Shopping",@"Entertainment",@"Music & Arts", nil];
+    self.menuItems = [NSArray arrayWithObjects:@"Profile", @"News Feed", @" ", @"Category",@"Food & Drink", @"Shopping",@"Entertainment",@"Music & Arts",@" ", @"Settings", @"Account Setting", nil];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
+    _myProperty = [NSDictionary dictionaryWithContentsOfFile:plistPath];
     
     UIImageView *sbg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sidebarbg"]];
     [sbg setFrame:CGRectMake(0, 0, 220, 480)];
@@ -42,7 +45,8 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@"Category"]) {
+    if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@"Category"] ||
+        [[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@"Settings"]) {
         return 35;
     }else if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@" "]){
         return 15;
@@ -59,11 +63,12 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
-    if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@"Category"]) {
+    if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@"Category"] ||
+        [[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@"Settings"]) {
         [cell setAccessoryType:UITableViewCellAccessoryNone];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         cell.textLabel.text = [NSString stringWithFormat:@"%@",[self.menuItems objectAtIndex:indexPath.row]];
-        cell.textLabel.font = [UIFont fontWithName:@"Avenir-Black" size:17];
+        cell.textLabel.font = [UIFont fontWithName:[_myProperty valueForKey:@"Font B"] size:17];
         cell.textLabel.textColor = [UIColor grayColor];
         UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sidebarCellLine"]];
         [bg setFrame:CGRectMake(0, 0, 10, 0)];
@@ -71,13 +76,15 @@
         cell.backgroundView = bg;
         return cell;
     }else if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@" "]){
+        [cell setAccessoryType:UITableViewCellAccessoryNone];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         return cell;
     }
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
     
     cell.textLabel.text = [NSString stringWithFormat:@"      %@",[self.menuItems objectAtIndex:indexPath.row]];
-    cell.textLabel.font = [UIFont fontWithName:@"Avenir Romen" size:13];
+    cell.textLabel.font = [UIFont fontWithName:[_myProperty valueForKey:@"Font"] size:13];
     cell.textLabel.textColor = [UIColor whiteColor];
     UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sidebarCellLine"]];
     [bg setFrame:CGRectMake(0, 0, 161.5, 42.5)];
@@ -95,7 +102,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *identifier = [NSString stringWithFormat:@"%@", [self.menuItems objectAtIndex:indexPath.row]];
-    if (![identifier isEqualToString:@"Category"] && ![identifier isEqualToString:@" "]) {
+    if (![identifier isEqualToString:@"Category"] && ![identifier isEqualToString:@" "] &&
+        ![identifier isEqualToString:@"Settings"]) {
         UIViewController *newTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
         
         [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{

@@ -33,9 +33,7 @@
     NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
     _myProperty = [NSDictionary dictionaryWithContentsOfFile:plistPath];
     
-    UIImage * backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"Menubutton"]];
-    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
-    [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [self setViewDefault];
     
     self.sampleItems = [NSArray arrayWithObjects:@"One", @"Two", @"Three", nil];
 }
@@ -66,6 +64,12 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
     return YES;
+}
+
+-(void)setViewDefault{
+    UIImage * backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"Menubutton"]];
+    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
+    [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
 }
 
 @end

@@ -17,8 +17,7 @@
     NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
     _myProperty = [NSDictionary dictionaryWithContentsOfFile:plistPath];
 
-    UIImage *backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"NavigationBar"]];
-    [topBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+    [self setViewDefault];
     
     [super viewDidLoad];
 }
@@ -37,6 +36,11 @@
     }
     
     [self.view addGestureRecognizer:self.slidingViewController.panGesture];
+}
+
+-(void)setViewDefault{
+    UIImage *backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"NavigationBar"]];
+    [self.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
 }
 
 @end

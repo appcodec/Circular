@@ -25,18 +25,7 @@
     NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
     _myProperty = [NSDictionary dictionaryWithContentsOfFile:plistPath];
     
-    UIImage *backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"NavigationBar"]];
-    [topBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
-    
-    backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"Menubutton"]];
-    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
-    [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
-    // shadowPath, shadowOffset, and rotation is handled by ECSlidingViewController.
-    // You just need to set the opacity, radius, and color.
-    self.view.layer.shadowOpacity = 0.75f;
-    self.view.layer.shadowRadius = 10.0f;
-    self.view.layer.shadowColor = [UIColor blackColor].CGColor;
+    [self setViewDefault];
     
     if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
         self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
@@ -51,5 +40,17 @@
     [self.slidingViewController anchorTopViewTo:ECRight];
 }
 
+-(void)setViewDefault{
+    UIImage *backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"NavigationBar"]];
+    [topBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+    
+    backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"Menubutton"]];
+    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
+    [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    self.view.layer.shadowOpacity = 0.75f;
+    self.view.layer.shadowRadius = 10.0f;
+    self.view.layer.shadowColor = [UIColor blackColor].CGColor;
+}
 
 @end

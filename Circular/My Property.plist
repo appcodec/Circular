@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Font </key>
+	<string>Avenir Romen</string>
+	<key>Font B</key>
+	<string>Avenir-Black</string>
+	<key>Backbutton</key>
+	<string>backButton</string>
 	<key>NavigationBar</key>
 	<string>nav_bar_white_background</string>
 	<key>Menubutton</key>
