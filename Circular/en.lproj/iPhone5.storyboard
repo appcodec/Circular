@@ -156,7 +156,6 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="barItem" destination="yBz-MI-Ir2" id="N1E-P1-2gT"/>
@@ -189,7 +188,6 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="barItem" destination="eWV-fa-KaG" id="lDW-VU-qAo"/>
