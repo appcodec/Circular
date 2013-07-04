@@ -40,8 +40,9 @@
 
 - (void)setViewDefault
 {
-    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 34, 26)];
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 28)];
     [backButton setBackgroundImage:[UIImage imageNamed:[_myProperty valueForKey:@"Backbutton"]] forState:UIControlStateNormal];
+    
     UIBarButtonItem *barBackButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     [backButton addTarget:self action:@selector(popCurrentViewController) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = barBackButtonItem;

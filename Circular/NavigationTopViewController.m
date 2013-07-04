@@ -41,6 +41,12 @@
 -(void)setViewDefault{
     UIImage *backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"NavigationBar"]];
     [self.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+    
+    UILabel * text = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    text.font = [UIFont fontWithName:[_myProperty valueForKey:@"Font B"] size:19];
+    text.textColor = [UIColor grayColor];
+    text.text = @"News Feed";
+    [[self.navigationBar topItem] setTitleView:text];
 }
 
 @end

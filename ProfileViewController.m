@@ -44,10 +44,16 @@
     UIImage *backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"NavigationBar"]];
     [topBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     
+    UILabel * text = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    text.font = [UIFont fontWithName:[_myProperty valueForKey:@"Font B"] size:19];
+    text.textColor = [UIColor grayColor];
+    text.text = @"Profile";
+    [[topBar topItem] setTitleView:text];
+    
     backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"Menubutton"]];
     backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
     [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    
+        
     self.view.layer.shadowOpacity = 0.75f;
     self.view.layer.shadowRadius = 10.0f;
     self.view.layer.shadowColor = [UIColor blackColor].CGColor;

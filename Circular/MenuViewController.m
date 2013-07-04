@@ -23,6 +23,10 @@
     self.menuItems = [NSArray arrayWithObjects:@"Profile", @"News Feed", @" ", @"Category",@"Food & Drink", @"Shopping",@"Entertainment",@"Music & Arts",@" ", @"Settings", @"Account Setting", nil];
 }
 
+- (BOOL)isTitle:(NSString*)title{
+    return ([title isEqualToString:@"Category"] || [title isEqualToString:@"Settings"]);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -45,8 +49,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@"Category"] ||
-        [[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@"Settings"]) {
+    if ([self isTitle:[self.menuItems objectAtIndex:indexPath.row]]) {
         return 35;
     }else if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@" "]){
         return 15;
@@ -63,8 +66,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
-    if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@"Category"] ||
-        [[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@"Settings"]) {
+    if ([self isTitle:[self.menuItems objectAtIndex:indexPath.row]]) {
         [cell setAccessoryType:UITableViewCellAccessoryNone];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         cell.textLabel.text = [NSString stringWithFormat:@"%@",[self.menuItems objectAtIndex:indexPath.row]];
@@ -102,8 +104,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *identifier = [NSString stringWithFormat:@"%@", [self.menuItems objectAtIndex:indexPath.row]];
-    if (![identifier isEqualToString:@"Category"] && ![identifier isEqualToString:@" "] &&
-        ![identifier isEqualToString:@"Settings"]) {
+    if (![self isTitle:identifier] && ![identifier isEqualToString:@" "]) {
         UIViewController *newTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
         
         [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
@@ -114,5 +115,6 @@
         }];
     }
 }
+
 
 @end
