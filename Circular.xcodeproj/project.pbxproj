@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB89535A1783317D00252483 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8953591783317D00252483 /* CustomCell.m */; };
 		ED23676F17832766000A0830 /* textured_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676C17832766000A0830 /* textured_background@2x.png */; };
 		ED23677017832766000A0830 /* nav_btn_sidebar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */; };
 		ED23677117832766000A0830 /* nav_bar_white_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676E17832766000A0830 /* nav_bar_white_background@2x.png */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB8953581783317D00252483 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		EB8953591783317D00252483 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		ED23676C17832766000A0830 /* textured_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textured_background@2x.png"; sourceTree = "<group>"; };
 		ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_btn_sidebar@2x.png"; sourceTree = "<group>"; };
 		ED23676E17832766000A0830 /* nav_bar_white_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bar_white_background@2x.png"; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 		EDC32BD5178154AE00A2E1D4 = {
 			isa = PBXGroup;
 			children = (
+				EB8953581783317D00252483 /* CustomCell.h */,
+				EB8953591783317D00252483 /* CustomCell.m */,
 				EDC32BE7178154AE00A2E1D4 /* Circular */,
 				EDC32BE0178154AE00A2E1D4 /* Frameworks */,
 				EDC32BDF178154AE00A2E1D4 /* Products */,
@@ -279,6 +284,7 @@
 				EDE6512A1782DA81000D3C02 /* FeedsCellViewController.m in Sources */,
 				EDE6512E1782E2AE000D3C02 /* DetailCellViewController.m in Sources */,
 				EDE651331782E5E8000D3C02 /* MenuViewController.m in Sources */,
+				EB89535A1783317D00252483 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

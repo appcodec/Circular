@@ -10,5 +10,6 @@
 #import "ECSlidingViewController.h"
 
 @interface FeedsCellViewController : UITableViewController <UITableViewDataSource, UITabBarControllerDelegate>
+@property (nonatomic,retain) IBOutlet UITableView * table;
 - (IBAction)revealMenu:(id)sender;
 @end

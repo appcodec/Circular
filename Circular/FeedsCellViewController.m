@@ -7,6 +7,8 @@
 //
 
 #import "FeedsCellViewController.h"
+#import "DetailCellViewController.h"
+#import "CustomCell.h"
 
 @interface FeedsCellViewController()
 @property (nonatomic, strong) NSArray *sampleItems;
@@ -14,6 +16,7 @@
 
 @implementation FeedsCellViewController
 @synthesize sampleItems;
+@synthesize table;
 
 - (void)awakeFromNib
 {
@@ -27,15 +30,39 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellIdentifier = @"SampleCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    NSString *cellIdentifier = @"toDetail";
+    
+    
+    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        cell = [[CustomCell alloc]
+                initWithStyle:UITableViewCellStyleDefault
+                reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = [self.sampleItems objectAtIndex:indexPath.row];
+    cell.title.text = @"Hot News !!";
+    cell.description.text = @"TEXT";
+    [cell.image setImage:[UIImage imageNamed:@"Default"]];
     
     return cell;
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"toDetail"])
+    {
+        
+        DetailCellViewController *DVC = [segue destinationViewController];
+//        PeekPagedScrollViewController *peekPagedScrollViewController = [segue destinationViewController];
+        
+        NSIndexPath *myIndexPath = [self.table indexPathForSelectedRow];
+        
+        int row = [myIndexPath row];
+        
+//        NSLog(@"Index:%d",row);
+
+    }
 }
 
 - (IBAction)revealMenu:(id)sender
