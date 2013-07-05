@@ -11,6 +11,7 @@
 
 @interface FeedsCellViewController : UITableViewController <UITableViewDataSource, UITabBarControllerDelegate>
 @property (nonatomic,retain) IBOutlet UITableView * table;
+@property (nonatomic,retain)NSDictionary * myProperty;
 - (IBAction)revealMenu:(id)sender;
 
 @end
