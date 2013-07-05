@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB89535A1783317D00252483 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8953591783317D00252483 /* CustomCell.m */; };
+		EB96888B1786E6D20055FEB7 /* My Property.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB96888A1786E6D20055FEB7 /* My Property.plist */; };
 		ED23676F17832766000A0830 /* textured_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676C17832766000A0830 /* textured_background@2x.png */; };
 		ED23677017832766000A0830 /* nav_btn_sidebar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */; };
 		ED338E7C1784A71000E368A4 /* backButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED338E7B1784A71000E368A4 /* backButton@2x.png */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		EB8953581783317D00252483 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		EB8953591783317D00252483 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		EB96888A1786E6D20055FEB7 /* My Property.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "My Property.plist"; sourceTree = "<group>"; };
 		ED23676C17832766000A0830 /* textured_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textured_background@2x.png"; sourceTree = "<group>"; };
 		ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_btn_sidebar@2x.png"; sourceTree = "<group>"; };
 		ED338E7B1784A71000E368A4 /* backButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@2x.png"; sourceTree = "<group>"; };
@@ -95,8 +97,6 @@
 		ED137B9D1783480300C5025D /* SettingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				ED137B9A178347FF00C5025D /* SettingController.h */,
-				ED137B9B178347FF00C5025D /* SettingController.m */,
 			);
 			name = SettingScreen;
 			path = ..;
@@ -108,17 +108,8 @@
 				ED59884C1785ED8E0034BD7D /* white.jpg */,
 				ED338E7D1784AA9B00E368A4 /* Account Setting@2x.png */,
 				ED338E7B1784A71000E368A4 /* backButton@2x.png */,
-				ED137BA217834D1100C5025D /* sidebarCellLine@2x.png */,
-				ED137BA017834CB300C5025D /* sidebarbg@2x.png */,
 				ED23676C17832766000A0830 /* textured_background@2x.png */,
 				ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */,
-				ED137B9E1783494C00C5025D /* nav_bar_white_background@2x.png */,
-				ED137BA817834F9000C5025D /* News Feed@2x.png */,
-				ED137BA917834F9000C5025D /* Profile@2x.png */,
-				ED137BAC1783517100C5025D /* Entertainment@2x.png */,
-				ED137BAD1783517100C5025D /* Food & Drink@2x.png */,
-				ED137BAE1783517100C5025D /* Music & Arts@2x.png */,
-				ED137BAF1783517100C5025D /* Shopping@2x.png */,
 			);
 			name = Picture;
 			sourceTree = "<group>";
@@ -175,8 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				ED23676B17832748000A0830 /* Picture */,
-				ED137B98178343E900C5025D /* My Property.plist */,
 				EDC32BE9178154AE00A2E1D4 /* Circular-Info.plist */,
+				EB96888A1786E6D20055FEB7 /* My Property.plist */,
 				EDC32BEA178154AE00A2E1D4 /* InfoPlist.strings */,
 				EDC32BED178154AE00A2E1D4 /* main.m */,
 				EDC32BEF178154AE00A2E1D4 /* Circular-Prefix.pch */,
@@ -290,19 +281,10 @@
 				ED8CC95517832111004B21E6 /* iPhone4.storyboard in Resources */,
 				ED23676F17832766000A0830 /* textured_background@2x.png in Resources */,
 				ED23677017832766000A0830 /* nav_btn_sidebar@2x.png in Resources */,
-				ED137B99178343E900C5025D /* My Property.plist in Resources */,
-				ED137B9F1783494C00C5025D /* nav_bar_white_background@2x.png in Resources */,
-				ED137BA117834CB300C5025D /* sidebarbg@2x.png in Resources */,
-				ED137BA317834D1100C5025D /* sidebarCellLine@2x.png in Resources */,
-				ED137BAA17834F9000C5025D /* News Feed@2x.png in Resources */,
-				ED137BAB17834F9000C5025D /* Profile@2x.png in Resources */,
-				ED137BB01783517100C5025D /* Entertainment@2x.png in Resources */,
-				ED137BB11783517100C5025D /* Food & Drink@2x.png in Resources */,
-				ED137BB21783517100C5025D /* Music & Arts@2x.png in Resources */,
-				ED137BB31783517100C5025D /* Shopping@2x.png in Resources */,
 				ED338E7C1784A71000E368A4 /* backButton@2x.png in Resources */,
 				ED338E7E1784AA9B00E368A4 /* Account Setting@2x.png in Resources */,
 				ED59884D1785ED8E0034BD7D /* white.jpg in Resources */,
+				EB96888B1786E6D20055FEB7 /* My Property.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
