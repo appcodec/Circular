@@ -10,4 +10,6 @@
 
 @interface DetailCellViewController : UIViewController
 
+@property (nonatomic,retain)NSDictionary * myProperty;
+
 @end

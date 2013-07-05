@@ -10,7 +10,12 @@
 #import "DetailCellViewController.h"
 #import "CustomCell.h"
 
-@interface FeedsCellViewController()
+@interface FeedsCellViewController(){
+    IBOutlet UIBarButtonItem * barItem;
+}
+
+
+
 @property (nonatomic, strong) NSArray *sampleItems;
 @end
 
@@ -18,8 +23,21 @@
 @synthesize sampleItems;
 @synthesize table;
 
+//-(void)viewDidLoad{
+//    [super viewDidLoad];
+//
+//    UIImage * backgroundImage = [UIImage imageNamed:@"nav_btn_sidebar"];
+//    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:0.2 topCapHeight:-5];
+//    [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//}
+
 - (void)awakeFromNib
 {
+    NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
+    _myProperty = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    
+    [self setViewDefault];
+    
     self.sampleItems = [NSArray arrayWithObjects:@"One", @"Two", @"Three", nil];
 }
 
@@ -73,6 +91,12 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
     return YES;
+}
+
+-(void)setViewDefault{
+    UIImage * backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"Menubutton"]];
+    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
+    [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
 }
 
 @end

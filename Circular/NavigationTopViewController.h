@@ -10,6 +10,10 @@
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
 
-@interface NavigationTopViewController : UINavigationController
+@interface NavigationTopViewController : UINavigationController{
+    
+}
+
+@property (nonatomic,retain)NSDictionary * myProperty;
 
 @end
