@@ -116,7 +116,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="barItem" destination="N85-pO-VxE" id="V83-H9-vz3"/>
+                        <outlet property="barItem" destination="N85-pO-VxE" id="7N7-Yq-DZQ"/>
                         <outlet property="table" destination="SjQ-WZ-ddl" id="r0C-mL-NJd"/>
                     </connections>
                 </tableViewController>
