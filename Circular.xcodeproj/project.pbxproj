@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		EB89535A1783317D00252483 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8953591783317D00252483 /* CustomCell.m */; };
 		EB96888B1786E6D20055FEB7 /* My Property.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB96888A1786E6D20055FEB7 /* My Property.plist */; };
+		EB96888E1786E85F0055FEB7 /* sidebarbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96888C1786E85F0055FEB7 /* sidebarbg@2x.png */; };
+		EB96888F1786E85F0055FEB7 /* sidebarCellLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96888D1786E85F0055FEB7 /* sidebarCellLine@2x.png */; };
+		EB9688951786E89B0055FEB7 /* Entertainment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9688901786E89A0055FEB7 /* Entertainment@2x.png */; };
+		EB9688961786E89B0055FEB7 /* Food & Drink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9688911786E89B0055FEB7 /* Food & Drink@2x.png */; };
+		EB9688971786E89B0055FEB7 /* Music & Arts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9688921786E89B0055FEB7 /* Music & Arts@2x.png */; };
+		EB9688981786E89B0055FEB7 /* Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9688931786E89B0055FEB7 /* Profile@2x.png */; };
+		EB9688991786E89B0055FEB7 /* Shopping@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9688941786E89B0055FEB7 /* Shopping@2x.png */; };
+		EB96889B1786E8AD0055FEB7 /* News Feed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96889A1786E8AD0055FEB7 /* News Feed@2x.png */; };
+		EB96889E1786E8C00055FEB7 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB96889D1786E8BD0055FEB7 /* SettingController.m */; };
+		EB9688A01786EE2C0055FEB7 /* nav_bar_white_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96889F1786EE2C0055FEB7 /* nav_bar_white_background@2x.png */; };
 		ED23676F17832766000A0830 /* textured_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676C17832766000A0830 /* textured_background@2x.png */; };
 		ED23677017832766000A0830 /* nav_btn_sidebar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */; };
 		ED338E7C1784A71000E368A4 /* backButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED338E7B1784A71000E368A4 /* backButton@2x.png */; };
@@ -40,6 +50,17 @@
 		EB8953581783317D00252483 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		EB8953591783317D00252483 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		EB96888A1786E6D20055FEB7 /* My Property.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "My Property.plist"; sourceTree = "<group>"; };
+		EB96888C1786E85F0055FEB7 /* sidebarbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebarbg@2x.png"; sourceTree = "<group>"; };
+		EB96888D1786E85F0055FEB7 /* sidebarCellLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebarCellLine@2x.png"; sourceTree = "<group>"; };
+		EB9688901786E89A0055FEB7 /* Entertainment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Entertainment@2x.png"; sourceTree = "<group>"; };
+		EB9688911786E89B0055FEB7 /* Food & Drink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food & Drink@2x.png"; sourceTree = "<group>"; };
+		EB9688921786E89B0055FEB7 /* Music & Arts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Music & Arts@2x.png"; sourceTree = "<group>"; };
+		EB9688931786E89B0055FEB7 /* Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile@2x.png"; sourceTree = "<group>"; };
+		EB9688941786E89B0055FEB7 /* Shopping@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shopping@2x.png"; sourceTree = "<group>"; };
+		EB96889A1786E8AD0055FEB7 /* News Feed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News Feed@2x.png"; sourceTree = "<group>"; };
+		EB96889C1786E8BD0055FEB7 /* SettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		EB96889D1786E8BD0055FEB7 /* SettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		EB96889F1786EE2C0055FEB7 /* nav_bar_white_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_bar_white_background@2x.png"; sourceTree = "<group>"; };
 		ED23676C17832766000A0830 /* textured_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textured_background@2x.png"; sourceTree = "<group>"; };
 		ED23676D17832766000A0830 /* nav_btn_sidebar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_btn_sidebar@2x.png"; sourceTree = "<group>"; };
 		ED338E7B1784A71000E368A4 /* backButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@2x.png"; sourceTree = "<group>"; };
@@ -97,6 +118,8 @@
 		ED137B9D1783480300C5025D /* SettingScreen */ = {
 			isa = PBXGroup;
 			children = (
+				EB96889C1786E8BD0055FEB7 /* SettingController.h */,
+				EB96889D1786E8BD0055FEB7 /* SettingController.m */,
 			);
 			name = SettingScreen;
 			path = ..;
@@ -105,6 +128,15 @@
 		ED23676B17832748000A0830 /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				EB96889F1786EE2C0055FEB7 /* nav_bar_white_background@2x.png */,
+				EB96889A1786E8AD0055FEB7 /* News Feed@2x.png */,
+				EB9688901786E89A0055FEB7 /* Entertainment@2x.png */,
+				EB9688911786E89B0055FEB7 /* Food & Drink@2x.png */,
+				EB9688921786E89B0055FEB7 /* Music & Arts@2x.png */,
+				EB9688931786E89B0055FEB7 /* Profile@2x.png */,
+				EB9688941786E89B0055FEB7 /* Shopping@2x.png */,
+				EB96888C1786E85F0055FEB7 /* sidebarbg@2x.png */,
+				EB96888D1786E85F0055FEB7 /* sidebarCellLine@2x.png */,
 				ED59884C1785ED8E0034BD7D /* white.jpg */,
 				ED338E7D1784AA9B00E368A4 /* Account Setting@2x.png */,
 				ED338E7B1784A71000E368A4 /* backButton@2x.png */,
@@ -285,6 +317,15 @@
 				ED338E7E1784AA9B00E368A4 /* Account Setting@2x.png in Resources */,
 				ED59884D1785ED8E0034BD7D /* white.jpg in Resources */,
 				EB96888B1786E6D20055FEB7 /* My Property.plist in Resources */,
+				EB96888E1786E85F0055FEB7 /* sidebarbg@2x.png in Resources */,
+				EB96888F1786E85F0055FEB7 /* sidebarCellLine@2x.png in Resources */,
+				EB9688951786E89B0055FEB7 /* Entertainment@2x.png in Resources */,
+				EB9688961786E89B0055FEB7 /* Food & Drink@2x.png in Resources */,
+				EB9688971786E89B0055FEB7 /* Music & Arts@2x.png in Resources */,
+				EB9688981786E89B0055FEB7 /* Profile@2x.png in Resources */,
+				EB9688991786E89B0055FEB7 /* Shopping@2x.png in Resources */,
+				EB96889B1786E8AD0055FEB7 /* News Feed@2x.png in Resources */,
+				EB9688A01786EE2C0055FEB7 /* nav_bar_white_background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +347,7 @@
 				EDE6512E1782E2AE000D3C02 /* DetailCellViewController.m in Sources */,
 				EDE651331782E5E8000D3C02 /* MenuViewController.m in Sources */,
 				EB89535A1783317D00252483 /* CustomCell.m in Sources */,
+				EB96889E1786E8C00055FEB7 /* SettingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
