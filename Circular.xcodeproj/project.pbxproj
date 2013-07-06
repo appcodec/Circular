@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB89535A1783317D00252483 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8953591783317D00252483 /* CustomCell.m */; };
-		EB91EC361787BBF700323F51 /* iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB91EC351787BBF700323F51 /* iPhone4.storyboard */; };
+		EB91EC381787BC5700323F51 /* iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB91EC371787BC5700323F51 /* iPhone4.storyboard */; };
 		EB96888B1786E6D20055FEB7 /* My Property.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB96888A1786E6D20055FEB7 /* My Property.plist */; };
 		EB96888E1786E85F0055FEB7 /* sidebarbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96888C1786E85F0055FEB7 /* sidebarbg@2x.png */; };
 		EB96888F1786E85F0055FEB7 /* sidebarCellLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96888D1786E85F0055FEB7 /* sidebarCellLine@2x.png */; };
@@ -49,7 +49,7 @@
 /* Begin PBXFileReference section */
 		EB8953581783317D00252483 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		EB8953591783317D00252483 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
-		EB91EC351787BBF700323F51 /* iPhone4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone4.storyboard; sourceTree = "<group>"; };
+		EB91EC371787BC5700323F51 /* iPhone4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhone4.storyboard; path = ../iPhone4.storyboard; sourceTree = "<group>"; };
 		EB96888A1786E6D20055FEB7 /* My Property.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "My Property.plist"; sourceTree = "<group>"; };
 		EB96888C1786E85F0055FEB7 /* sidebarbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebarbg@2x.png"; sourceTree = "<group>"; };
 		EB96888D1786E85F0055FEB7 /* sidebarCellLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebarCellLine@2x.png"; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 				EDC32BF1178154AE00A2E1D4 /* AppDelegate.m */,
 				EDE651171782A54F000D3C02 /* InitialSlidingViewController.h */,
 				EDE651181782A54F000D3C02 /* InitialSlidingViewController.m */,
-				EB91EC351787BBF700323F51 /* iPhone4.storyboard */,
+				EB91EC371787BC5700323F51 /* iPhone4.storyboard */,
 				EDC32BF9178154AE00A2E1D4 /* iPhone5.storyboard */,
 				EDE651161782A511000D3C02 /* SlideMenu */,
 				EDE6512B1782DEB8000D3C02 /* MainScreen(FeedNews + Detail) */,
@@ -333,7 +333,7 @@
 				EB9688991786E89B0055FEB7 /* Shopping@2x.png in Resources */,
 				EB96889B1786E8AD0055FEB7 /* News Feed@2x.png in Resources */,
 				EB9688A01786EE2C0055FEB7 /* nav_bar_white_background@2x.png in Resources */,
-				EB91EC361787BBF700323F51 /* iPhone4.storyboard in Resources */,
+				EB91EC381787BC5700323F51 /* iPhone4.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
