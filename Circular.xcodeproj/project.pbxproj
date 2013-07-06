@@ -25,6 +25,13 @@
 		EDC32BF6178154AE00A2E1D4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF5178154AE00A2E1D4 /* Default@2x.png */; };
 		EDC32BF8178154AE00A2E1D4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF7178154AE00A2E1D4 /* Default-568h@2x.png */; };
 		EDC32BFB178154AE00A2E1D4 /* iPhone5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC32BF9178154AE00A2E1D4 /* iPhone5.storyboard */; };
+		EDD5088C1786E90A009A231C /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5088B1786E90A009A231C /* SettingController.m */; };
+		EDD5088E1787A4B3009A231C /* Circular_icon114@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD5088D1787A4B3009A231C /* Circular_icon114@2x.png */; };
+		EDD508901787A4DD009A231C /* Circular_icon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD5088F1787A4DD009A231C /* Circular_icon57@2x.png */; };
+		EDD508921787B609009A231C /* Circular2_icon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD508911787B609009A231C /* Circular2_icon57@2x.png */; };
+		EDD508941787B60F009A231C /* Circular2_icon114@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD508931787B60F009A231C /* Circular2_icon114@2x.png */; };
+		EDD508961787B914009A231C /* Circular3_icon114@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD508951787B914009A231C /* Circular3_icon114@2x.png */; };
+		EDD508981787B918009A231C /* Circular3_icon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD508971787B918009A231C /* Circular3_icon57@2x.png */; };
 		EDE651141782A50D000D3C02 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE651111782A50D000D3C02 /* ECSlidingViewController.m */; };
 		EDE651151782A50D000D3C02 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE651131782A50D000D3C02 /* UIImage+ImageWithUIView.m */; };
 		EDE651191782A54F000D3C02 /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE651181782A54F000D3C02 /* InitialSlidingViewController.m */; };
@@ -60,6 +67,14 @@
 		EDC32BF5178154AE00A2E1D4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EDC32BF7178154AE00A2E1D4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EDC32BFA178154AE00A2E1D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone5.storyboard; sourceTree = "<group>"; };
+		EDD5088A1786E90A009A231C /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		EDD5088B1786E90A009A231C /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		EDD5088D1787A4B3009A231C /* Circular_icon114@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circular_icon114@2x.png"; sourceTree = "<group>"; };
+		EDD5088F1787A4DD009A231C /* Circular_icon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circular_icon57@2x.png"; sourceTree = "<group>"; };
+		EDD508911787B609009A231C /* Circular2_icon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circular2_icon57@2x.png"; sourceTree = "<group>"; };
+		EDD508931787B60F009A231C /* Circular2_icon114@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circular2_icon114@2x.png"; sourceTree = "<group>"; };
+		EDD508951787B914009A231C /* Circular3_icon114@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circular3_icon114@2x.png"; sourceTree = "<group>"; };
+		EDD508971787B918009A231C /* Circular3_icon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circular3_icon57@2x.png"; sourceTree = "<group>"; };
 		EDE651101782A50D000D3C02 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
 		EDE651111782A50D000D3C02 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
 		EDE651121782A50D000D3C02 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
@@ -97,6 +112,8 @@
 		ED137B9D1783480300C5025D /* SettingScreen */ = {
 			isa = PBXGroup;
 			children = (
+				EDD5088A1786E90A009A231C /* SettingController.h */,
+				EDD5088B1786E90A009A231C /* SettingController.m */,
 			);
 			name = SettingScreen;
 			path = ..;
@@ -117,6 +134,12 @@
 		EDC32BD5178154AE00A2E1D4 = {
 			isa = PBXGroup;
 			children = (
+				EDD508971787B918009A231C /* Circular3_icon57@2x.png */,
+				EDD508951787B914009A231C /* Circular3_icon114@2x.png */,
+				EDD508931787B60F009A231C /* Circular2_icon114@2x.png */,
+				EDD508911787B609009A231C /* Circular2_icon57@2x.png */,
+				EDD5088F1787A4DD009A231C /* Circular_icon57@2x.png */,
+				EDD5088D1787A4B3009A231C /* Circular_icon114@2x.png */,
 				EB8953581783317D00252483 /* CustomCell.h */,
 				EB8953591783317D00252483 /* CustomCell.m */,
 				EDC32BE7178154AE00A2E1D4 /* Circular */,
@@ -285,6 +308,12 @@
 				ED338E7E1784AA9B00E368A4 /* Account Setting@2x.png in Resources */,
 				ED59884D1785ED8E0034BD7D /* white.jpg in Resources */,
 				EB96888B1786E6D20055FEB7 /* My Property.plist in Resources */,
+				EDD5088E1787A4B3009A231C /* Circular_icon114@2x.png in Resources */,
+				EDD508901787A4DD009A231C /* Circular_icon57@2x.png in Resources */,
+				EDD508921787B609009A231C /* Circular2_icon57@2x.png in Resources */,
+				EDD508941787B60F009A231C /* Circular2_icon114@2x.png in Resources */,
+				EDD508961787B914009A231C /* Circular3_icon114@2x.png in Resources */,
+				EDD508981787B918009A231C /* Circular3_icon57@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +335,7 @@
 				EDE6512E1782E2AE000D3C02 /* DetailCellViewController.m in Sources */,
 				EDE651331782E5E8000D3C02 /* MenuViewController.m in Sources */,
 				EB89535A1783317D00252483 /* CustomCell.m in Sources */,
+				EDD5088C1786E90A009A231C /* SettingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
