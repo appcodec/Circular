@@ -23,14 +23,6 @@
 @synthesize sampleItems;
 @synthesize table;
 
-//-(void)viewDidLoad{
-//    [super viewDidLoad];
-//
-//    UIImage * backgroundImage = [UIImage imageNamed:@"nav_btn_sidebar"];
-//    backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:0.2 topCapHeight:-5];
-//    [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-//}
-
 - (void)awakeFromNib
 {
     NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
@@ -59,7 +51,13 @@
     }
     
     cell.title.text = @"Hot News !!";
-    cell.description.text = @"TEXT";
+    cell.title.font = [UIFont fontWithName:[_myProperty valueForKey:@"Font B"] size:17];
+    cell.title.textColor = [UIColor grayColor];
+
+//    cell.description.text = @"TEXT";
+    cell.description.font = [UIFont fontWithName:[_myProperty valueForKey:@"Font"] size:13];
+    cell.description.textColor = [UIColor grayColor];
+    
     [cell.image setImage:[UIImage imageNamed:@"Default"]];
     
     return cell;
