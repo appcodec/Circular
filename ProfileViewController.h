@@ -10,9 +10,20 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
+#import "RDActionSheet.h"
+#import "AGMedallionView.h"
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController<UINavigationControllerDelegate,
+UIImagePickerControllerDelegate>
+{
+    
+    AGMedallionView *medallionView;
+}
 
+@property (nonatomic, strong) IBOutlet AGMedallionView *medallionView;
 - (IBAction)revealMenu:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *cover_btn;
+-(void)changeProfilePhoto_btn:(id)sender;
+-(IBAction)changeCoverPhoto_btn:(id)sender;
 
 @end
