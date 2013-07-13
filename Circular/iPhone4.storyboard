@@ -318,6 +318,8 @@
             <relationships>
                 <relationship kind="action" name="revealMenu:"/>
                 <relationship kind="outlet" name="barItem" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="image" candidateClass="UIImage"/>
+                <relationship kind="outlet" name="profile_btn" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="topBar" candidateClass="UINavigationBar"/>
             </relationships>
         </class>

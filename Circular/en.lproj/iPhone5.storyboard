@@ -220,10 +220,32 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Tc7-qt-tGm">
+                                <rect key="frame" x="0.0" y="45" width="320" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeCoverPhoto_btn:" destination="dmU-g5-0gx" eventType="touchUpInside" id="l3n-AM-zf3"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="Cue-0D-O63" customClass="AGMedallionView">
+                                <rect key="frame" x="22" y="176" width="69" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="barItem" destination="yBz-MI-Ir2" id="N1E-P1-2gT"/>
+                        <outlet property="cover_btn" destination="Tc7-qt-tGm" id="HuG-xE-wi7"/>
+                        <outlet property="medallionView" destination="Cue-0D-O63" id="sfO-MB-sMv"/>
                         <outlet property="topBar" destination="3Rt-Mh-NhF" id="N84-8d-sha"/>
                     </connections>
                 </viewController>
@@ -275,6 +297,9 @@
         <image name="white.jpg" width="60" height="60"/>
     </resources>
     <classes>
+        <class className="AGMedallionView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGMedallionView.h"/>
+        </class>
         <class className="CustomCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
             <relationships>
@@ -312,8 +337,11 @@
         <class className="ProfileViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
             <relationships>
+                <relationship kind="action" name="changeCoverPhoto_btn:"/>
                 <relationship kind="action" name="revealMenu:"/>
                 <relationship kind="outlet" name="barItem" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="cover_btn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="medallionView" candidateClass="AGMedallionView"/>
                 <relationship kind="outlet" name="topBar" candidateClass="UINavigationBar"/>
             </relationships>
         </class>
