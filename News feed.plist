@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>isPost</key>
+		<true/>
+		<key>withImage</key>
+		<false/>
+		<key>provider_name</key>
+		<string>KFC</string>
+		<key>description</key>
+		<string>อร่อยสุดคุ้มกับไก่ทอดยอดฮิตติดลม KFC จัดเต็มกับชุดสุดคุ้ม! เลือกแซ่บถูกใจได้หลากหลายโปรโมชั่นกันเลยครับ! วันนี้ขอหยิบโปรเด็ดๆจาก KFC กับ 5 ชุดสุดคุ้มมาแนะนำกัน</string>
+		<key>image</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>isPost</key>
+		<true/>
+		<key>withImage</key>
+		<true/>
+		<key>provider_name</key>
+		<string>AirAsia</string>
+		<key>description</key>
+		<string>เตรียมเปิดเส้นทางบินใหม่ กรุงเทพ – เสียมราฐ หรือ เสียมเรียบ เมืองท่องเที่ยวสำคัญในกัมพูชา พร้อมโปรโมชั่นฉลองเส้นทางบินเสียมราฐ  งานนี้เตรียมตัวจัดทริปท่องนครวัด, โตนเลสาบ กับโปรราคาพิเศษที่เตรียมเปิดให้จับจองกันได้ในวันที่ 15 ก.ค.56 นี้กันได้เลย!</string>
+		<key>image</key>
+		<string>News_test03.jpg</string>
+	</dict>
+	<dict>
+		<key>isPost</key>
+		<true/>
+		<key>withImage</key>
+		<true/>
+		<key>provider_name</key>
+		<string>Central World</string>
+		<key>description</key>
+		<string>Grand Sale Promotion 30-70% รับเพิ่มคะแนน The 1 Card 5,000 คะแนน เมื่อรวมยอดซื้อประกันชีวิตทุก 50,000.- จากเมืองไทยประกันชีวิตหรือ รับเพิ่ม 1,000 คะแนน เมื่อซื้อประกันภัยรถยนต์ชั้น 1 จากสินมั่นคง</string>
+		<key>image</key>
+		<string>News_test01.jpg</string>
+	</dict>
+	<dict>
+		<key>isPost</key>
+		<true/>
+		<key>withImage</key>
+		<false/>
+		<key>provider_name</key>
+		<string>iStudio</string>
+		<key>description</key>
+		<string>คนรักแมค และ สินค้า Apple ราคาประหยัดฟังทางนี้เลย!…แวะช้อปคุ้มจัดเต็มกับสินค้า Apple และ Accessories ราคาพิเศษสุดคุ้มมากมายจาก iStudio by SPVi งานนี้มีเลือกสินค้าราคาพิเศษจาก iStudio by SPVi ให้เลือกมากมาย อาทิ</string>
+		<key>image</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>isPost</key>
+		<true/>
+		<key>withImage</key>
+		<true/>
+		<key>provider_name</key>
+		<string>Citybank</string>
+		<key>description</key>
+		<string>Citibank ใจดี มอบ promotion ของขวัญดีๆให้กับเจ้าของรถทุกท่าน วันนี้ ลูกค้าทุกท่านที่มี บัตร Citibank Gold, แพล็ตตินั่ม ซีเล็คท์, Citi M Visa, และอื่นๆ สามารถรับ เครดิตเงินคืนสูงสุด ถึง 8% เมื่อเติมน้ำมันที่ ปั๊มเชลล์ ผ่านบัตรเครดิตซิตี้แบงก์ครบทุก 800 บาท โดยอยู่ในวงเครดิตคืนเงินไม่เกิน 1,600 บาท ต่อหนึ่งใบเสร็จ หรือสูงสุดถึง 4,800 บาทต่อเดือน</string>
+		<key>image</key>
+		<string>News_test02.jpg</string>
+	</dict>
+</array>
+</plist>

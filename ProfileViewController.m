@@ -14,6 +14,7 @@
     IBOutlet UINavigationBar * topBar;
     IBOutlet UIBarButtonItem * barItem;
     UIImage* image;
+    
 }
 @property (nonatomic,retain)NSDictionary * myProperty;
 
@@ -22,27 +23,43 @@
 static inline double radians (double degrees) {return degrees * M_PI/180;}
 
 @implementation ProfileViewController
-@synthesize cover_btn;
+@synthesize cover_btn, medallionView;
 BOOL isProfilePic;
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
+    NSString *imgName= [[NSUserDefaults standardUserDefaults]valueForKey:@"mypic"];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDir = [paths objectAtIndex:0];
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@",documentsDir,imgName];
     
-    // press to change 'cover' picture. Link 'changeCoverPhoto_btn:' in xib.
-    image = [UIImage imageNamed:@"cover.jpg"];
+    NSLog(@"%@",[UIImage imageWithContentsOfFile:filePath]);
+    
+    if ([UIImage imageWithContentsOfFile:filePath] == NULL) {
+        self.medallionView.image = [UIImage imageNamed:@"Circular3_icon114@2x"];
+    }else{
+        self.medallionView.image = [UIImage imageWithContentsOfFile:filePath];
+    }
+    
+    imgName = [[NSUserDefaults standardUserDefaults]valueForKey:@"mycover"];
+    filePath = [NSString stringWithFormat:@"%@/%@",documentsDir,imgName];
+    
+    if ([UIImage imageWithContentsOfFile:filePath] == NULL) {
+        image = [UIImage imageNamed:@"cover.jpg"];
+    }else{
+        image = [UIImage imageWithContentsOfFile:filePath];
+    }
+    
     [cover_btn setImage:image forState:UIControlStateNormal];
-    
-    // press to change 'profile' picture. Call 'changeProfilePhoto_btn:' action
-    self.medallionView.image = [UIImage imageNamed:@"Circular3_icon114@2x"];
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeProfilePhoto_btn:)];
     [self.medallionView addGestureRecognizer:tapGestureRecognizer];
     
     
     NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
     _myProperty = [NSDictionary dictionaryWithContentsOfFile:plistPath];
-
+    
     [self setViewDefault];
     
     if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
@@ -118,7 +135,7 @@ BOOL isProfilePic;
     [actionSheet showFrom:self.view];
     
 }
-    
+
 -(void)actionSheet:(RDActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
     NSLog(@"didDismissWithButtonIndex %d", buttonIndex);
 }
@@ -160,12 +177,32 @@ BOOL isProfilePic;
     
     if (isProfilePic) {
         // set 'profile' image
+        NSString *mypic= @"mypic.png";
+        [[NSUserDefaults standardUserDefaults]setValue:mypic forKey:@"mypic"];
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        
+        NSString *savedImagePath = [documentsDirectory stringByAppendingPathComponent:mypic];
+        UIImage * myimage = images;
+        NSData *imageData = UIImagePNGRepresentation(myimage);
+        [imageData writeToFile:savedImagePath atomically:NO];
+        
         self.medallionView.image = images;
     } else {
         // set 'cover' image
+        NSString *mycover= @"mycover.png";
+        [[NSUserDefaults standardUserDefaults]setValue:mycover forKey:@"mycover"];
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        
+        NSString *savedImagePath = [documentsDirectory stringByAppendingPathComponent:mycover];
+        UIImage * myimage = images;
+        NSData *imageData = UIImagePNGRepresentation(myimage);
+        [imageData writeToFile:savedImagePath atomically:NO];
+        
         [cover_btn setImage:images forState:UIControlStateNormal];
     }
-
+    
 }
 
 
@@ -238,7 +275,7 @@ BOOL isProfilePic;
     backgroundImage = [UIImage imageNamed:[_myProperty valueForKey:@"Menubutton"]];
     backgroundImage = [backgroundImage stretchableImageWithLeftCapWidth:30 topCapHeight:2];
     [barItem setBackgroundImage:backgroundImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-        
+    
     self.view.layer.shadowOpacity = 0.75f;
     self.view.layer.shadowRadius = 10.0f;
     self.view.layer.shadowColor = [UIColor blackColor].CGColor;

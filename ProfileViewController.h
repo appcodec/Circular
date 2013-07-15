@@ -14,7 +14,7 @@
 #import "AGMedallionView.h"
 
 @interface ProfileViewController : UIViewController<UINavigationControllerDelegate,
-UIImagePickerControllerDelegate>
+UIImagePickerControllerDelegate,RDActionSheetDelegate>
 {
     
     AGMedallionView *medallionView;

@@ -9,69 +9,85 @@
 #import "FeedsCellViewController.h"
 #import "DetailCellViewController.h"
 #import "CustomCell.h"
+#import "Feed.h"
 
-#define cellStyle01 98 // only text
-#define cellStyle02 320 // text + image
+#define cellStyle01 318
+#define cellStyle02 122 
 
 @interface FeedsCellViewController(){
     IBOutlet UIBarButtonItem * barItem;
 }
-@property (nonatomic, strong) NSArray *sampleItems;
+@property (nonatomic, strong) NSMutableArray * feedItem;
 @end
 
 @implementation FeedsCellViewController
-@synthesize sampleItems;
-@synthesize table;
+@synthesize feedItem;
+@synthesize tableView;
 
 - (void)awakeFromNib
 {
+    feedItem = [[NSMutableArray alloc]init];
+    
     NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"My Property" ofType:@"plist"];
     _myProperty = [NSDictionary dictionaryWithContentsOfFile:plistPath];
     
+    plistPath = [[NSBundle mainBundle] pathForResource:@"News feed" ofType:@"plist"];
+    _sampleFeed = [[NSMutableArray alloc ]initWithContentsOfFile:plistPath];
+    
+    for (NSDictionary * dict in _sampleFeed) {
+        NSString * name = [dict objectForKey:@"provider_name"];
+        NSString * description = [dict objectForKey:@"description"];
+        NSString * image = [dict objectForKey:@"image"];
+        Boolean isPost = [[dict objectForKey:@"isPost"] boolValue];
+        Boolean withImage = [[dict objectForKey:@"withImage"] boolValue];
+        
+        Feed * newFeed = [[Feed alloc] initWithProvider:name withDescription:description withImage:image isPost:isPost withImage:withImage];
+        
+        [feedItem addObject:newFeed];
+    }
+    
     [self setViewDefault];
-    self.sampleItems = [NSArray arrayWithObjects:@"One", @"Two", @"Three", nil];
-
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-//    return self.sampleItems.count;
-    return 20;
+    return self.feedItem.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row % 2 == 0) {
+    if ([[feedItem objectAtIndex:indexPath.row] withImage]) {
         return cellStyle01;
     }else{
         return cellStyle02;
     }
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView1 cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *cellIdentifier = [[NSString alloc] init];
-    if (indexPath.row % 2 == 0) {
+    Feed * currentFeed = [[Feed alloc]initWithFeed:[feedItem objectAtIndex:indexPath.row]];
+    if ([currentFeed withImage]) {
         cellIdentifier = @"cellStyle01";
     }else{
         cellIdentifier = @"cellStyle02";
     }
     
-    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    CustomCell *cell = [tableView1 dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
         cell = [[CustomCell alloc]
                 initWithStyle:UITableViewCellStyleDefault
                 reuseIdentifier:cellIdentifier];
     }
     
-    cell.title.text = @"CentralWorld";
+    cell.title.text = currentFeed.provider_name;
     cell.title.font = [UIFont fontWithName:[_myProperty valueForKey:@"Font B"] size:20];
-    cell.title.textColor = [UIColor grayColor];
-
-    cell.description.text = @"Grand Sale Promotion 30-70% รับเพิ่มคะแนน The 1 Card 5,000 คะแนน เมื่อรวมยอดซื้อประกันชีวิตทุก 50,000.- จากเมืองไทยประกันชีวิตหรือ รับเพิ่ม 1,000 คะแนน เมื่อซื้อประกันภัยรถยนต์ชั้น 1 จากสินมั่นคง";
-    cell.description.textColor = [UIColor blackColor];
     
-    [cell.image setImage:[UIImage imageNamed:@"News_test01.jpg"]];
+    cell.description.text = currentFeed.description;
+    
+    if ([currentFeed withImage]) {
+        [cell.image setImage:[UIImage imageNamed:currentFeed.image]];
+    }
     
     UILongPressGestureRecognizer *lpgr = [[UILongPressGestureRecognizer alloc]
                                           initWithTarget:self action:@selector(handleLongPress:)];
@@ -81,6 +97,7 @@
     
     return cell;
 }
+
 
 -(void)handleLongPress:(UILongPressGestureRecognizer *)gestureRecognizer
 {
@@ -97,13 +114,12 @@
 {
     if ([[segue identifier] isEqualToString:@"toDetail"])
     {
-        DetailCellViewController * DVC = [segue destinationViewController];
+//        DetailCellViewController * DVC = [segue destinationViewController];
         
-        NSIndexPath *myIndexPath = [self.table indexPathForSelectedRow];
+        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
         
         int row = [myIndexPath row];
         NSLog(@"Index:%d",row);
-
     }
 }
 

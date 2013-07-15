@@ -11,8 +11,10 @@
 
 @interface FeedsCellViewController : UITableViewController <UITableViewDataSource, UITabBarControllerDelegate , UIGestureRecognizerDelegate>
 
-@property (nonatomic,retain) IBOutlet UITableView * table;
+@property (nonatomic,strong) IBOutlet UITableView * tableView;
 @property (nonatomic,retain)NSDictionary * myProperty;
+@property (nonatomic,retain)NSMutableArray * sampleFeed;
+
 - (IBAction)revealMenu:(id)sender;
 
 @end

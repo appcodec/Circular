@@ -20,11 +20,11 @@
 
 - (void)awakeFromNib
 {
-    self.menuItems = [NSArray arrayWithObjects:@"Profile", @"News Feed", @" ", @"Category",@"Food & Drink", @"Shopping",@"Entertainment",@"Music & Arts",@" ", @"Settings", @"Account Setting", nil];
+    self.menuItems = [NSArray arrayWithObjects:@"Me", @"News Feed", @" ", @"Category",@"Food & Drink", @"Shopping",@"Entertainment",@"Music & Arts",@" ", @"Setting", @"Account Setting", nil];
 }
 
 - (BOOL)isTitle:(NSString*)title{
-    return ([title isEqualToString:@"Category"] || [title isEqualToString:@"Settings"]);
+    return ([title isEqualToString:@"Category"] || [title isEqualToString:@"Setting"]);
 }
 
 - (void)viewDidLoad
@@ -50,7 +50,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([self isTitle:[self.menuItems objectAtIndex:indexPath.row]]) {
-        return 35;
+        return 36;
     }else if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@" "]){
         return 15;
     }else{
@@ -72,17 +72,17 @@
         cell.textLabel.text = [NSString stringWithFormat:@"%@",[self.menuItems objectAtIndex:indexPath.row]];
         cell.textLabel.font = [UIFont fontWithName:[_myProperty valueForKey:@"Font B"] size:17];
         cell.textLabel.textColor = [UIColor grayColor];
-        UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sidebarCellLine"]];
-        [bg setFrame:CGRectMake(0, 0, 10, 0)];
-        
-        cell.backgroundView = bg;
+//        UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sidebarCellLine"]];
+//        [bg setFrame:CGRectMake(0, 0, 10, 0)];
+//        
+//        cell.backgroundView = bg;
         return cell;
     }else if ([[self.menuItems objectAtIndex:indexPath.row] isEqualToString:@" "]){
         [cell setAccessoryType:UITableViewCellAccessoryNone];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         return cell;
     }
-    [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+    [cell setAccessoryType:UITableViewCellAccessoryNone];
     [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
     
     cell.textLabel.text = [NSString stringWithFormat:@"      %@",[self.menuItems objectAtIndex:indexPath.row]];
